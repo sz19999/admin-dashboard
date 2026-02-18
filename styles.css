@@ -182,11 +182,51 @@ body {
     background-color: white;
     border-radius: 10px;
     padding: 1rem 0;
+    box-shadow: 0 0.3rem 0.5rem rgb(175, 175, 175);
 }
 
 .announcements p:nth-child(2) {
     border-top: 1px solid var(--txt-lightgray);
     border-bottom: 1px solid var(--txt-lightgray);
+}
+
+.trending .grid-container {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1.2rem;
+    box-shadow: 0 0.3rem 0.5rem rgb(175, 175, 175);
+}
+
+.trending .grid-container > div {
+    padding-bottom: 1rem;
+    color: var(--txt-lightgray);
+    font-size: 0.8rem;
+}
+
+.trending .grid-container span {
+    display: block;
+    color: black;
+}
+
+.trending p {
+    font-weight: bold;
+    margin-bottom: 0.7rem;
+    margin-top: 2.9rem;
+}
+
+.trending svg {
+    width: 35px;
+    height: 35px;
+}
+
+.trending-row {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
 }
 
 /* header */
