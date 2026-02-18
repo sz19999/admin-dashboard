@@ -232,5 +232,98 @@ body {
 /* header */
 
 .header {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+    padding-right: 4rem;
+    padding-left: 2rem;
+}
+
+.header .top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.3rem;
+}
+
+.header .top .left svg {
+    height: 20px;
+    width: 20px;
+}
+
+.search-bar {
+    width: 23rem;
+    height: 20px;
+    background-color: #bebebe;
+    border-radius: 10px;
+}
+
+.header .top .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header .top .right {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.header .top .right p {
+    font-weight: bold;
+}
+
+.bell {
+    height: 20px;
+    width: 20px;
+}
+
+.top .avatar {
+    height: 35px;
+    width: 35px;
+}
+
+.header .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom .left {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.bottom .avatar {
+    height: 50px;
+    width: 50px;
+}
+
+.bottom .left p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.bottom .left span {
+    display: block;
+    font-size: 1.2rem;
+}
+
+.bottom .right .grid-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+}
+
+.bottom .grid-container > div {
+    padding: 0.5rem 2rem;
+    background-color: #4d89ce;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.bottom .right {
+    align-self: center;
 }
